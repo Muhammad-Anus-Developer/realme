@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="c15.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>realme C15</title>
+  </head>
+  <body>
+       <!-- Navbar -->
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img width="120px" style="margin-right: 100px;"
+             src="data:image/png;base64,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" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item text-center fist">
+                <a class="nav-link active" aria-current="page" href="c15.html">Overview</a>
+              </li>
+              <li class="nav-item fit">
+                <a class="nav-link" href="#specs">Specs</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <div>
+        <img width="100%" src="fis.PNG" alt="">
+      </div>
+      <br>
+      <br>
+      <br>
+<div id="specs" class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="text-center">
+        <img class="zoom" width="90%" src="c01.PNG" alt="">
+
+        <img class="zoom" style="margin-top: 13px;" width="90%" src="c04.PNG" alt="">
+      </div>
+    </div>
+    <div class="col-sm">
+      <img class="zoom" width="90%" src="c02.PNG" alt="">
+      <img class="zoom" style="margin-top: 7px;" width="87%" src="c05.PNG" alt="">
+      <img class="zoom" style="margin-top: 7px;" width="90%" src="c06.PNG" alt="">
+    </div>
+    <div class="col-sm">
+      <img width="90%" class="zoom" src="c03.PNG" alt="">
+      <img style="margin-top: 7px;" class="zoom" width="90%" src="c07.PNG" alt="">
+      <img style="margin-top: 7px;" width="87%" class="zoom" src="c08.PNG" alt="">
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+<div class="ratio ratio-16x9">
+  <iframe src="https://static.realme.net/v2/realme-c15/images/video/realme-c15-10s-b768f556f2.mp4" allowfullscreen></iframe>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="text-center">
+  <img width="70%" src="grad.PNG" alt="">
+</div>
+<br>
+
+<p class="text-center">With an incredible 6000mAh high-capacity battery, the realme C15 will be your very own power bank. Even after heavy usage, you can easily enjoy more than a full day of ultra-long battery life. Time to say goodbye to low battery anxiety.</p>
+<br>
+
+<div class="text-center">
+  <img width="80%" src="grad1.PNG" alt="">
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="text-center">
+<img width="80%" src="as.PNG" alt=""></div>
+<br>
+<br>
+<br>
+<div class="text-center"><img width="35%" src="grad2.PNG" alt=""></div>
+<p class="text-center">realme C15 supports 18W quick charge with a 9V/2A adapter.
+  Save your charging time without worry.</p>
+<br>
+<br>
+<br>
+<div class="text-center">
+  <img width="100%" src="ajeeb.PNG" alt="">
+</div>
+<br>
+<br>
+<br>
+<br>
+<div style="margin-left: 30px;">
+  <img width="50%" src="sa.PNG" alt="">
+</div>
+
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+     <div class="text-center">
+       <img class="zoom" width="85%" src="cam1.PNG" alt="">
+       <img class="zoom" style="margin-top: 15px;" width="85%" src="cam3.PNG" alt="">
+     </div>
+    </div>
+    <div class="col-sm">
+      <div class="text-center">
+      <img class="zoom" width="85%" src="cam2.PNG" alt="">
+      <img class="zoom" style="margin-top: 15px;" width="85%" src="cam4.PNG" alt=""></div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<img width="30%" src="h01.PNG" alt="">
+<br>
+<p>realme C15 can capture pure and bright pictures even in low light environment, thanks to the super nightscape mode. Keep your memories bright and clear.</p>
+<br>
+<br>
+<div class="text-center">
+<img src="h0b.PNG" width="80%" alt="">
+</div>
+<br>
+<br>
+<br>
+<img width="30%" src="h02.PNG" alt="">
+<br>
+<p class="text-center">With the 119° Ultra wide-angle lens, realme C15 brings a wider field of view that is suitable for shooting wide landscapes.*</p>
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="text-center">
+        <img src="h02(3).PNG" alt="">
+        <br>
+        <br>
+        <img src="h02(1).PNG" alt="">
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="text-center">
+        <img src="h02(4).PNG" alt="">
+        <br>
+        <br>
+        <img src="h02(2).PNG" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<div class="text-center">
+  <img width="30%" src="h03.PNG" alt="">
+</div>
+<br>
+<p class="text-center">Capture the best you.</p>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+    <div class="text-center">
+      <img width="90%" src="beauty.PNG" alt="">
+    </div>
+    </div>
+    <div class="col-sm">
+      <div class="text-center">
+        <img width="90%" src="portrait.PNG" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+
+<br>
+<br>
+<div class="text-center">
+<img width="90%" src="edi.PNG" alt="">
+</div>
+<br>
+<div class="text-center">
+  <img width="100%" src="edi1.PNG" alt="">
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="text-center">
+  <img width="60%" src="edi2.PNG" alt="">
+  <h2 style="color: black;">Marine Blue</h2>
+</div>
+<br><br>
+<br><br>
+<br>
+<div class="text-center">
+  <img width="80%" src="splash.PNG" alt="">
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="text-center">
+  <img width="80%" src="spil.PNG" alt="">
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h5>Remarks:</h5>
+<div>
+  <ol class="fog">
+    <li>6000mAh is the typical value of realme C15 battery capacity.</li>
+    <li>The data of "57-day standby" come from realme lab. Since the test results are affected by the test environment, please refer to the actual situation.</li>
+    <li>The Reverse Charging feature of the realme C15 requires turning on the OTG function for providing charging to other phones via the OTG cable.</li>
+    <li>The data of battery life are from the realme lab. The actual results may vary slightly depending on the environment.</li>
+    <li>The data of 119 ° Super Wide-Angle Lens is the module data of hardware, the actual field of view will be slightly smaller after distortion correction.</li>
+    <li>The screen ratio data comes from the test results of realme lab.</li>
+    <li>The AnTuTu benchmark result of Helio G35 and the other entry-level processor is obtained from realme Lab.</li>
+    <li>The test standards are all from realme lab.</li>
+  </ol>
+</div>
+<br>
+<br><hr>
+<br><br>
+
+<div class="container">
+    <div class="row">
+      <div class="col-sm">
+            <h6>Recommended</h6>
+            <br>
+            <div>
+            <a href="realme7pro.html" class="font">realme 7 Pro</a>
+            <br>
+            <a href="c15.html" class="font">realme C15</a>
+            <br>
+            <a href="c17.html" class="font">realme C17</a>
+            <br>
+            <a href="c12.html" class="font">realme C12</a>
+            <br>
+            <a href="../smart life/watch.html" class="font">realme Watch</a>
+            <br>
+            <a href="../smart life/cam.html" class="font">realme SmartCam 360</a>
+        <br>
+        <br>
+        </div>
+      </div>
+      <div class="col-sm">
+        <h6>Support</h6>
+        <br>
+        <div>
+        <a href="../faq.html" class="font">FAQ</a>
+        <br>
+        <a href="../trouble.html" class="font">Troubleshooting</a>
+        <br>
+        <br>
+    </div>
+      </div>
+      <div class="col-sm">
+        <h6>About realme</h6>
+        <br>
+        <div>
+        <a href="../brand.html" class="font">Our Brand</a>
+        <br>
+        <a href="../brand.html#award" class="font">Newsroom</a>
+        <br>
+        <br>
+    </div>
+      </div>
+      <div class="col-sm">
+        <h6>Contact realme</h6>
+        <br>
+        <div>
+        <a href="mailto:service.pk@realme.com" class="font">service.pk@realme.com</a>
+        <br>
+        <br>
+    </div>
+      </div>
+      <div class="col-sm">
+        <div class="text-center">
+          <br>
+          <br>
+          
+          <h4>0800-0-8866</h4>
+          <p class="font">11:00-19:00, MON-SAT</p>
+          
+        <a href="https://www.facebook.com/Pakistanrealme"> <div class="round ro1"></div></a> 
+    <a href="https://twitter.com/pakistan_realme"><div class="round ro2"></div></a>
+    <a href="https://www.youtube.com/channel/UC2aNaZJABfeGQYTx8KTdcXw"><div class="round ro4"></div></a>
+    <a href="https://twitter.com/pakistan_realme"><div class="round ro3"></div></a>
+    <br>
+        </div>
+      </div>
+    </div>
+  </div>
+<hr>
+
+<div class="fontgrey text-center">© 2019-2021 realme. All Rights Reserved.</div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
+</html>
